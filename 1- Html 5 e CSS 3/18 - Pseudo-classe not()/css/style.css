@@ -1,0 +1,7 @@
+input:not(:checked)+p {
+    background: blue;
+}
+
+p:not(.meio) {
+    background: red;
+}

@@ -1,0 +1,19 @@
+/*
+Herança em CSS é um conceito fundamental que permite que certas propriedades de estilo definidas em um elemento pai sejam automaticamente aplicadas aos seus elementos filhos. Isso ajuda a manter o código mais limpo e evita repetições desnecessárias.
+*/
+** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#texto {
+    color: red;
+    font-family: sans-serif;
+    font-size: 70px;
+}
+
+p {
+    font-size: initial;
+    /* Herança de tamanho de fonte */
+}

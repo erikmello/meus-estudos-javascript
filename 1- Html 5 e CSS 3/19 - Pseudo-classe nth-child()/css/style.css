@@ -1,0 +1,21 @@
+input:not(:checked)+p {
+    background: blue;
+}
+
+
+
+P:nth-child(odd) {
+    background: rebeccapurple;
+}
+
+p:nth-child(even) {
+    background: darkcyan;
+}
+
+p:nth-child(3n) {
+    background: darkolivegreen;
+}
+
+p:nth-child(3n+10) {
+    background: darkred;
+}

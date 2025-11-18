@@ -1,0 +1,24 @@
+/*
+ID  classe, atributos e pseudo-classes, Elemento e pseudo-elemento
+
+!important
+    - !important é uma forma de dar prioridade a um estilo, mesmo que ele não tenha a maior especificidade.
+    - O uso excessivo de !important pode tornar o código CSS difícil de manter e entender.
+    - É recomendado usar !important com moderação e apenas quando necessário.
+*/
+
+#p {
+    background: red;
+}
+
+#p.p {
+    background: yellow
+}
+
+body#b.bclass p#p.p {
+    background: purple !important;
+}
+
+body#b.bclass p#p.p {
+    background: blue !important;
+}

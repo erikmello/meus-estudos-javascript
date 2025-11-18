@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas HTML</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        tfoot td {
+            background-color: gray;
+            color: white; 
+        }
+
+        tfoot {
+            font-style: italic;
+            font-family: sans-serif;
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>Estrutura Básica de uma Tabela</p>
+<div class="responsive-table">
+    <table>
+        <caption>Título da Tabela</caption>
+
+        <!-- Cabeçalho -->
+        <thead>
+            <tr>
+                <th>Exemplo 1</th>
+                <th>Exemplo 2</th>
+                <th>Exemplo 3</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2"></td> <!-- Mescla 2 colunas -->
+                <td td rowspan="">TOTAL</td>
+            </tr>
+            <tr>
+                <td>R$500</td>
+            </tr>
+        </tfoot>
+
+        <!-- Corpo -->
+        <tbody>
+            <tr>
+                <td>Corpo do Exemplo 1</td>
+                <td>Corpo do Exemplo 2</td>
+                <td>Corpo do Exemplo 3</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">Corpo do Exemplo 1</td>
+                <td>Corpo do Exemplo 3</td>
+            </tr>
+            <tr>
+                <td>Corpo do Exemplo 3</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

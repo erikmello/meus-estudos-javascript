@@ -1,0 +1,23 @@
+/*
+**Box Model em CSS: Propriedades e Funcionamento**
+
+O Box Model é um conceito fundamental no CSS que define como os elementos HTML são estruturados visualmente. Cada elemento é tratado como uma "caixa" composta por 4 camadas: **conteúdo**, **padding**, **border** e **margin**.
+*/
+
+
+.texto {
+    box-sizing: border-box;
+    background: red;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    min-width: 0;
+    min-height: 100px;
+    overflow: auto;
+    margin: 0 auto 50px auto;
+    padding: 10px 5px;
+    border-width: 5px;
+    border-style: inset;
+    border-color: darkmagenta;
+}
